@@ -6,16 +6,16 @@ edition = "2024"
 resolver = "2"
 
 [dependencies]
-log = "0.4.26"
+log = "0.4.29"
 esp-idf-svc = { version = "0.51.0", features = [
     "critical-section",
     "embassy-sync",
     "embassy-time-driver",
 ] }
-thiserror = "2.0.12"
+thiserror = "2.0.18"
 
 [build-dependencies]
-embuild = "0.33.0"
+embuild = "0.33.1"
 
 [features]
 default = []

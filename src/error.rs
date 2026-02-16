@@ -25,7 +25,7 @@ pub enum Error {
     Crc(#[from] CrcError),
 }
 
-/// The CRC error
+/// CRC error
 #[derive(Clone, Copy, Debug, Eq, Error, PartialEq)]
 #[error("unexpected CRC {{ crc={crc}, expected=0 }}")]
 pub struct CrcError {
